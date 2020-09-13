@@ -13,18 +13,24 @@ html,body{
     padding: 20px 0;
 }
 
+#container{
+    margin: 15px;
+}
+
 .sections {
-    position: relative;
-    width: 30%;
-    border: 1px solid;
-    margin-top: 20px;
-    margin-left: 2.5%;
-    padding: 15px;
-    background-color: yellow;
+    width: 33.33%;
     float: left;
 }
 
-.sections h3{
+.box{
+    position: relative;
+    margin: 15px;
+    border: 1px solid;
+    padding: 15px;
+    background-color: yellow;
+}
+
+.box h3{
     color: white;
     position: absolute;
     top: 0;
@@ -35,39 +41,34 @@ html,body{
     margin: 0;
 }
 
-#chicken_section h3{
+#chicken_section .box h3{
     background-color: red;
 }
 
-#beef_section h3{
+#beef_section .box h3{
     background-color: green;
 }
 
-#sushi_section h3{
+#sushi_section .box h3{
     background-color: blue;
 }
 
-.sections p{
+.box p{
     padding-top: 20px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
-    .sections{
-        margin-left: 2%;
-    }
-
     #chicken_section, #beef_section {
-        width: 47%;
+        width: 50%;
     }
 
     #sushi_section {
-        width: 96%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 767px){
     .sections {
-        width: 96%;
-        margin-left: 2%;
+        width: 100%;
     }
 }
